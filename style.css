@@ -4,7 +4,7 @@
 }
 body{
     height: 100vh;
-    border: 5px solid green;
+   
 }
 body  *{
     border: 1px solid black;
@@ -18,5 +18,29 @@ header{
 
 footer{
     display: inline-block;
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.line-content-1{
+    width: 293px;
+    height: 355px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    border-bottom-right-radius:5% ;
+
+}
+
+.line-content-2{
+    width: 292px;
+    height: 216px;
+    margin-left: 5.5px;
+    margin-right: 5.5px;
+    margin-top: 18px;
+    border-top-right-radius:5%;
     
 }
