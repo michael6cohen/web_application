@@ -154,10 +154,7 @@ li.sep {
     margin-left: 12px;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-}
+
 
 .row-content-1 {
     position: relative;
@@ -386,5 +383,60 @@ footer {
 .footer-nav>li>a:hover,.header-top>a:hover {
     color: rgb(0, 96, 155);
     text-decoration: underline;
+}
+
+.row {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height:426px ;
+    
+}
+.col{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    
+   
+}
+.col:nth-child(1){
+  flex-basis: 122px;
+    
+    
+   
+}
+
+.col:nth-child(2){
+    flex-basis: 440px;
+    height: 426px;
+      
+      
+     
+  }
+
+  .col:nth-child(3){
+    flex-basis: 292px;
+    height: 426px;
+      
+     
+  }
+  
+
+
+main.contact-page{
+    margin: auto;
+    border: 1px solid black;
+    width: 900px;
+    height: 458px;
+    padding-top: 32px;
+    
+}
+
+.content{
+    border: 1px solid black;
 }
 
