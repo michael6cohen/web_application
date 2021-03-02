@@ -83,12 +83,9 @@ li.sep {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
+    height: 33px;
     font-weight: bold;
-    display: inline;
-}
-
-.top-bar {
-  
+    display: inline-block;
 }
 
 .sep-2 {
@@ -100,27 +97,27 @@ li.sep {
     background: url(images/menu_dropdown_sep.png) repeat-x 0 0;
 }
 
-.dropdown-content *:not(.sep-2) {
-    text-decoration: none;
+.dropdown-content a {
+    display: block;
+}
+
+.dropdown-content a:not(.sep-2) {
     font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
     color: #fff;
-    padding:  4px;
+    padding: 4px;
     white-space: nowrap;
 }
 
-.dropdown  li:not(.sep-2){
-    padding: 3.5px;
-}
-
-
 .dropdown {
     position: relative;
+    display: inline;
 }
 
-.dropdown-content{
+.dropdown-content {
     background: rgb(144, 144, 144);
-    background: linear-gradient(0deg, rgba(144,144,144,1) 88%, rgba(171,171,171,1) 95%);
+    background: linear-gradient(0deg, rgba(144, 144, 144, 1) 88%, rgba(171, 171, 171, 1) 95%);
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -130,10 +127,18 @@ li.sep {
     display: none;
 }
 
-.dropdown:hover > .dropdown-content {
+.dropdown-content a:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+.dropdown a:hover {
+    color: rgb(0, 96, 155);
+    text-decoration: underline;
+}
+
+.dropdown:hover>.dropdown-content {
     display: block;
-  }
-  
+}
 
 .header-top {
     margin-bottom: 30px;
