@@ -113,6 +113,7 @@ li.sep {
 .dropdown {
     position: relative;
     display: inline;
+    z-index: 1;
 }
 
 .dropdown-content {
@@ -165,27 +166,96 @@ footer {
 }
 
 .row {
-    border: 1px solid black;
     display: flex;
     justify-content: center;
 }
 
-.line-content-1 {
-    border: 1px solid black;
+.row-content-1 {
+    
+    position: relative;
     width: 293px;
     height: 355px;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 30px;
-    border-bottom-right-radius: 5%;
+    border-bottom-right-radius: 20px;
 }
 
-.line-content-2 {
+.row-content-2 {
     border: 1px solid black;
     width: 292px;
     height: 216px;
     margin-left: 5.5px;
     margin-right: 5.5px;
     margin-top: 18px;
-    border-top-right-radius: 5%;
+   
+    border-top-right-radius: 20px;
 }
+
+
+.row-content-1>div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    position: absolute;
+    color: #fff;
+    font-size: 13px;
+    width: 248px;
+    height: 97px;
+
+   
+    bottom: 0;
+    margin: 8px;
+    border-bottom-right-radius: 20px;
+     background-color: rgb(125, 125, 125,0.9);
+}
+
+.row-content-1>div p {
+    width: 228px;
+    height: 52px;
+    padding-right: 10px;
+    margin-top: 4px;
+}
+
+.row-content-1>div h3 {
+    padding-right: 10px;
+    width: 228px;
+    height: 14px;
+    margin-top: 5px;
+
+}
+.read-more{
+    width: 54px;
+    height: 15px;
+    background: url(images/read_more_white.png) no-repeat left center;
+    align-self:flex-end ;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.row-content-1>div a {   
+    color: #fff;
+    width: 54px;
+    display: inline-block;
+    
+}
+.read-more> a:hover {
+     color: rgb(0, 96, 155);
+}
+
+.read-more:hover {
+    background: url(images/read_more_blue.png) no-repeat left center;
+}
+
+.row-content-1:nth-child(1){
+    background: url(images/1908364606615453350.JPG);
+}
+
+.row-content-1:nth-child(2){
+    background: url(images/Picture-046410251500.jpg);
+}
+
+.row-content-1:nth-child(3){
+    background: url(images/פזקר_-291_354410564000.jpg);
+}
+
+
