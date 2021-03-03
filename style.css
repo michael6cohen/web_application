@@ -155,16 +155,15 @@ li.sep {
 }
 
 .row {
-   
-    display: flex;  
-    justify-content: center;  
+    display: flex;
+    justify-content: center;
 }
-
 
 .row-content-1 {
     position: relative;
     width: 293px;
     height: 355px;
+    min-width: 293px;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 30px;
@@ -267,7 +266,8 @@ li.sep {
     height: 33px;
     margin-right: 24px;
     padding: 0;
-    border-bottom: 2px solid rgb(235, 235, 235);;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    ;
 }
 
 .row-content-2>img {
@@ -311,10 +311,12 @@ li.sep {
     margin-right: 15px;
     margin-bottom: 10px;
 }
-.distribution>img[src^="images/Untitled-3058756287.jpg"]{
+
+.distribution>img[src^="images/Untitled-3058756287.jpg"] {
     display: inline-block;
     height: 165px;
 }
+
 .areas {
     width: 54px;
     height: 70px;
@@ -334,11 +336,8 @@ li.sep {
     display: block;
 }
 
-
-
-
 footer {
-    border: 1px solid black;
+    
     position: fixed;
     width: 100%;
     height: 38px;
@@ -348,133 +347,243 @@ footer {
 }
 
 .footer-nav {
-   
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     list-style: none;
+    min-width: 900px;
     padding: 0;
-
 }
 
 .footer-nav>li.sep-1 {
-  margin-left: 5px;
-  margin-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     color: #fff;
     font-size: 14px;
-
 }
 
-.footer-nav>li>a.pazomat{
+.footer-nav>li>a.pazomat {
     color: red;
 }
 
-.footer-nav>li>a{
+.footer-nav>li>a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-
 }
-.footer-nav>li>a.fb{
+
+.footer-nav>li>a.fb {
     width: 18px;
     height: 18px;
     display: block;
-  
-    background-image: url(images/fb_icon.png) ;
+    background-image: url(images/fb_icon.png);
 }
 
-
-.footer-nav>li>a:hover,.header-top>a:hover {
+.footer-nav>li>a:hover, .header-top>a:hover {
     color: rgb(0, 96, 155);
     text-decoration: underline;
 }
 
-
 .row_contact {
-    border: 1px solid green;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height:426px ;
-    
+    height: 426px;
 }
-.col{
-    border: 1px solid red;
+
+.col_contact {
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
 }
-.col:nth-child(1){
-  flex-basis: 122px;
-  height: 36px;  
+
+.col_contact:nth-child(1) {
+    flex-basis: 122px;
+    height: 36px;
 }
 
-.col:nth-child(2){
+.col_contact:nth-child(2) {
     flex-basis: 440px;
-    height: 426px;   
-  }
+    height: 426px;
+}
 
-  .col:nth-child(3){
+.col_contact:nth-child(3) {
+    
     flex-basis: 292px;
-    height: 426px;     
-  }
+    height: 370px;
+    justify-content: space-between;
+    align-self: flex-end;
+}
 
-
-main.contact-page{
+main.contact-page {
     margin: auto;
-    border: 1px solid black;
     width: 900px;
     height: 458px;
-    padding-top: 32px;
-    
+    padding-top: 25px;
 }
 
-.content{
-    
-}
-form.contact-form label{
+form.contact-form label {
     display: inline-block;
     font-size: 12px;
     width: 75px;
 }
 
-
-.contact-form{
-    border: 1px solid black;
+.contact-form {
+    border: 1px solid rgb(204, 204, 204);
     width: 385px;
     height: 357px;
     background: rgb(236, 236, 236);
     background: linear-gradient(0deg, rgba(236, 236, 236, 1) 33%, rgba(254, 254, 254, 1) 79%);
-    border-top-right-radius:20px;
+    border-top-right-radius: 20px;
 }
 
-.col>.content-5,.col>.content-6{
-    border: 1px solid black;
-    border-top-right-radius:20px;
+.col_contact>.content-5, .col_contact>.content-6 {
+    border: 1px solid rgb(204, 204, 204);
+    border-top-right-radius: 20px;
     width: 292px;
     height: 175px;
     background: rgb(236, 236, 236);
     background: linear-gradient(0deg, rgba(236, 236, 236, 1) 33%, rgba(254, 254, 254, 1) 79%);
-
 }
 
-.fields>textarea{
+.contact-form>p.directive {
+    width: 347px;
+    height: 30px;
+    font-size: 13px;
+    display: block;
+    color: #6d6d6d;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.contact-form>h4 {
+    color: #005ca0;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.contact-form>p.mandatory_field, form.contact-form label {
+    color: #72716d;
+    font-size: 12px;
+}
+
+.contact-form>p.mandatory_field, .contact-form>p.directive {
+    margin-right: 20px;
+}
+
+.fields>textarea {
     padding: 3px;
     width: 243px;
     height: 108px;
+    margin-top: 5px;
     border: 1px solid #808992;
 }
 
-.fields input{
+.fields input {
     width: 168px;
-    padding: 3px;
-    margin: 3px;
+    padding: 2px;
+    margin-top: 5px;
     border: 1px solid #808992;
 }
 
-.fields{
+.fields {
     width: 260px;
     height: 216px;
+    margin: auto;
+}
+
+.content-3>h4 {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 12px;
+    padding-bottom: 4px;
+    width: 440px;
+    color: #6d6d6d;
+}
+
+.content-2>.navigation {
+margin-bottom: 20px;
+}
+
+.content-2>.navigation >*{
+    color: #5c5c5c;
+    text-decoration: none;
+    outline: none;
+    font-size: 12px;
+}
+
+
+.content-2>.navigation >a:hover ,.content-6 a:hover,.button-contact:hover{
+    color: rgb(0, 96, 155);
+    text-decoration: underline;
+}
+
+.address{
+    
+    color: #6d6d6d;
+    width: 248px;
+    height:65px;
+    font-size: 15px;
+    margin: auto;
+ 
+}
+
+.address > h5{
+    font-weight:normal;
+ 
+ 
+}
+.address > h5:nth-child(1){
+    font-weight: bold;
+ 
+ 
+}
+
+.content-5 h4,.content-6 h4{
+      font-size: 15px;
+    font-weight: bold;
+    color: #005ca0;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 248px;
+    border-bottom: 1px solid #cbcbcb;
+    line-height: 1.5;
+}
+
+.content-6 h5{
+    color: #6d6d6d;
+    font-size: 13px;
+
+}
+.more-pas{
+   margin-right: 20px;
+}
+
+.content-6 a{
+    font-size: 13px;
+    text-decoration:none;
+
+}
+
+.button-contact{
+display: block;
+width: 110px;
+height: 36px;
+text-align: center;
+text-decoration:none;
+border-top: 1px solid  #cbcbcb;
+font-size: 13px;
+color: #5c5c5c;
+line-height: 32px;
+background: rgb(236, 236, 236);
+background: linear-gradient(0deg, rgba(236, 236, 236, 1) 33%, rgba(254, 254, 254, 1) 79%);
 }
